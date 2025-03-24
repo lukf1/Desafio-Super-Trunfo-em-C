@@ -12,14 +12,14 @@ typedef struct {
 } Carta;
 
 
-// FunÃ§Ã£o para exibir os dados da carta
+// Função para exibir os dados da carta
 void exibir_carta(Carta c, int numero) {
     printf("\nCarta %d:\n",numero);
     printf("Estado: %c\n",c.estado);
     printf("Codigo: %s\n",c.codigo);
     printf("Nome da Cidade: %s\n", c.nome_cidade);
     printf("Populacao: %d\n",c.populacao);
-    printf("Area: %.2f kmÂ²\n",c.area);
+    printf("Area: %.2f km²\n",c.area);
     printf("PIB: %.2f bilhoes de reais\n",c.pib);
     printf("Numero de Pontos Turisticos: %d\n",c.pontos_turisticos);
 }
@@ -47,7 +47,7 @@ int main() {
     printf("Populacao: \n");
     scanf("%d", &carta1.populacao);
     
-    printf("Area (kmÂ²): \n");
+    printf("Area (km²): \n");
     scanf("%f", &carta1.area);
     
     printf("PIB (bilhoes de reais): \n");
@@ -71,7 +71,7 @@ int main() {
     printf("Populacao: \n");
     scanf("%d", &carta2.populacao);
     
-    printf("Area (kmÂ²): \n");
+    printf("Area (km²): \n");
     scanf("%f", &carta2.area);
     
     printf("PIB (bilhoes de reais): \n");
@@ -80,10 +80,9 @@ int main() {
     printf("Numero de Pontos Turisticos: \n");
     scanf("%d", &carta2.pontos_turisticos);
 
-    // ExibiÃ§Ã£o das cartas
+    // Exibição das cartas
     exibir_carta(carta1, 1);
     exibir_carta(carta2, 2);
 
     return 0;
 }
-
